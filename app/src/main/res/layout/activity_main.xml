@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.google.jetickets.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/fromText"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:id="@+id/fromText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="@string/DdateText"
+        android:layout_below="@+id/ToText"
+        android:layout_alignRight="@+id/ToText"
+        android:layout_alignEnd="@+id/ToText"
+        android:layout_marginTop="5dp"
+        android:id="@+id/DdateText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="@string/AdateText"
+        android:layout_below="@+id/DdateText"
+        android:layout_alignLeft="@+id/DdateText"
+        android:layout_alignStart="@+id/DdateText"
+        android:layout_marginTop="5dp"
+        android:id="@+id/AdateText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="@string/passText"
+        android:layout_marginTop="5dp"
+        android:id="@+id/passText"
+        android:layout_below="@+id/AdateText"
+        android:layout_alignLeft="@+id/AdateText"
+        android:layout_alignStart="@+id/AdateText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/ToText"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:id="@+id/ToText"
+        android:layout_below="@+id/fromText"
+        android:layout_alignLeft="@+id/fromText"
+        android:layout_alignStart="@+id/fromText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/nonStop"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:layout_below="@+id/passText"
+        android:layout_alignRight="@+id/passText"
+        android:layout_alignEnd="@+id/passText"
+        android:id="@+id/nonStop" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/resultNumber"
+        android:ems="10"
+        android:layout_below="@+id/currency"
+        android:layout_alignLeft="@+id/currency"
+        android:layout_alignStart="@+id/currency"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resultNumber" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/maxPrice"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:id="@+id/maxPrice"
+        android:layout_below="@+id/nonStop"
+        android:layout_alignLeft="@+id/currency"
+        android:layout_alignStart="@+id/currency" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/currency"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:id="@+id/currency"
+        android:layout_below="@+id/maxPrice"
+        android:layout_alignLeft="@+id/nonStop"
+        android:layout_alignStart="@+id/nonStop" />
+
+    <Button
+        android:text="@string/book_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/resultNumber"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

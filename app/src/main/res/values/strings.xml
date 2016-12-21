@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">JETickets</string>
+    <string name="fromText">Από:</string>
+    <string name="ToText">Προς:</string>
+    <string name="DdateText">Ημερομηνία Αναχώρησης</string>
+    <string name="AdateText">Ημερομηνία Επιστροφής</string>
+    <string name="passText">Αριθμός επιβατών</string>
+    <string name="nonStop">Ενδιάμεσες στάσεις</string>
+    <string name="maxPrice">Μέγιστη τιμή</string>
+    <string name="currency">Νόμισμα</string>
+    <string name="resultNumber">Αριθμός αποτελεσμάτων</string>
+    <string name="book_now">Book now</string>
+
+
+</resources>
